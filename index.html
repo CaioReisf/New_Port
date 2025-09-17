@@ -11,6 +11,22 @@
 
 </head>
 <body>
+
+       <div id="loading-screen">
+        <div class="card">
+            <div class="loader">
+                <p>Carregando</p>
+                <div class="words">
+                    <span class="word">buttons</span>
+                    <span class="word">forms</span>
+                    <span class="word">switches</span>
+                    <span class="word">cards</span>
+                    <span class="word">buttons</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <header>
         <div id="cabeca">
             <h3>Caio Reis <span>|Dev.</span></h3>
@@ -30,8 +46,139 @@
 
     <section id="s1">
         <h1>Caio Reis</h1>
-        <h2>Desenvolvedor Front-end</h2>
+        <span id="text" class="digitando"></span>
         <p>criando experiências web dinâmicas, amigáveis e bem projetadas.</p>
+        <i class="fa-solid fa-angles-down fa-bounce"></i>
     </section>
+
+    <section id="s2">
+        <div class="sobremim">
+            <h1>Sobre mim :</h1>
+            <p>Olá! Meu nome é Caio Reis, tenho 22 anos e <br> sou estudante de Análise e Desenvolvimento de Sistemas. <br> Atuo como designer gráfico e desenvolvedor freelancer.</p>
+        </div>
+        <img src="img/500x500.jpg" alt="#" width="200px">
+    </section>
+
+  <div class="container">
+  <!-- Menu lateral dentro do bloco -->
+  <aside class="menu">
+    <ul>
+      <li data-target="servicos" class="active">Servicos</li>
+      <li data-target="projetos">Projetos</li>
+      <li data-target="skills">Skills</li>
+      <li data-target="contato">Contato</li>
+
+    </ul>
+  </aside>
+
+  <!-- Conteúdo -->
+  <section class="conteudo">
+    <div id="servicos" class="secao active">
+      <h2><span>Servicos :</span></h2>
+      <p>
+        <span>> Design de Interfaces (UI/UX):</span> <br>
+        Criação de interfaces modernas, intuitivas e responsivas. Experiência centrada no usuário com foco em estética e funcionalidade. <br>
+
+        <span>> Sites E-commerce:</span> <br>
+        Lojas online responsivas com carrinho, checkout e design atrativo. <br>
+
+        <span>> Integração com APIs:</span> <br>
+        Sites conectados a sistemas externos como CRMs, ERPs e formulários inteligentes.
+      </p>
+      
+    </div>
+
+    <div id="projetos" class="secao">
+      <h2><span>Projetos :</span></h2>
+      <p>
+        <span>> CyberMods:</span> <br>
+        Sistemas de compras de implantes artificiais para melhorar seu corpo.<br>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-square-js"></i>
+        <a href="https://caioreisf.github.io/cyber-mods" target="_blank">Confira!</a>
+        <br>
+        <br>
+
+        <span>> Lista de Tarefas</span> <br>
+        um gerenciador de tarefas moderno e pratico para ser usado no dia-a-dia. <br>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-square-js"></i>
+        <a href="https://caioreisf.github.io/list-tarefas" target="_blank">Confira!</a>
+        <br>
+        <br>
+
+        <span>> Impacto Fitness:</span> <br>
+        Site de chamada de uma academia de esportes mistos. <br>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-square-js"></i>
+        <a href="https://caioreisf.github.io/impact0-fitness" target="_blank">Confira!</a>
+        <br>
+        <br>
+      </p>
+
+      <span>> Eco-Friendly:</span> <br>
+        Landing-page de uma ONG ambiental com o foco em sustentabilidade do mundo. <br>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-square-js"></i>
+        <a href="https://caioreisf.github.io/Eco-Friendly" target="_blank">Confira!</a>
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div id="skills" class="secao">
+      <h2><span>SKills :</span></h2>
+      <p>
+        <span>> Front-end:</span> <br>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-square-js"></i>
+        <i class="fa-brands fa-react"></i>
+        <br>
+        
+        <span>> Back-end:</span> <br>
+        <i class="fa-brands fa-python"></i>
+        <br>
+
+        <span>> Outros:</span> <br>
+        <i class="fa-brands fa-square-figma"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-wordpress"></i>
+        <br>
+
+        <span>> Estudando: </span> <br>
+         <i class="fa-brands fa-java"></i>
+         <i class="fa-brands fa-node"></i>
+
+
+      </p>
+
+    </div>
+
+    <div id="contato" class="secao">
+            <h2>Contato</h2>
+            <form class="form-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+  </section>
+</div>
+
+<footer>© 2025 por CAIOREIS. Todos os direitos reservados.</footer>
+
+<script src="secao.js"></script>
 </body>
 </html>

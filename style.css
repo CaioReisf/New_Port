@@ -8,8 +8,8 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-flow: column wrap;
     background-color: black;
@@ -71,9 +71,183 @@ header div .redes .insta:hover{
 /*  PRIMEIRA SECAO */
 
 #s1{
-    margin: auto;
+    margin-top: 20%;
     text-align: center;
 }
 #s1 h1{
-    font-size: 7rem;
+    font-size: 9rem;
+    margin: 0px;
+    padding: 0px;
+    line-height: 100px;
+}
+
+#s1 span{
+    font-size: 2rem;
+    color: #8a2be2;
+    margin: 0px;
+    padding: 0px;
+}
+
+#s1 i{
+    font-size: 3rem;
+    margin-top: 6%;
+    color: blueviolet;
+}
+/* SEGUNDA SECAO */
+
+#s2{
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 25%;
+    margin-bottom: 20%;
+}
+
+#s2 .sobremim h1{
+    color: blueviolet;
+    font-size: 3rem;
+    
+}
+#s2 .sobremim p{
+    font-size: 1.2rem;
+    
+}
+
+#s2 img{
+    border-radius: 25px;
+}
+
+/* SECAO DE TROCA */
+
+.container {
+  display: flex;
+  border-radius: 8px;
+  padding: 30px;
+  gap: 15%;
+  max-width: 1000px;  
+  width: 100%;
+  margin: 0 auto;    
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #8b949e;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.menu li.active {
+  color: #f1f1f1;
+  background: #21262d;
+  border-left: 3px solid blueviolet; 
+}
+
+.conteudo {
+  flex: 1;
+}
+
+.secao {
+  display: none;
+  font-size: 2rem;
+}
+
+.secao.active {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.secao h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  color: white;
+}
+
+.secao span {
+  color: blueviolet;
+}
+
+#projetos a{
+    text-decoration: none;
+    color: blueviolet;
+    border-bottom: 1px blueviolet solid;
+    border-radius: 100px;
+    padding: 3px;
+}
+
+
+
+/* FORMS */
+.contato {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.contato h2 {
+  color: #e6edf3;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #161b22;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.form-contato label {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.form-contato input,
+.form-contato textarea {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  color: #e6edf3;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Fira Code", monospace;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: #ff6ec7; /* destaque rosa/neon */
+  outline: none;
+}
+
+.form-contato button {
+  background: #ff6ec7;
+  color: #0d1117;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-contato button:hover {
+  background: #ff3ea5;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 5%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.492);
 }
