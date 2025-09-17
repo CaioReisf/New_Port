@@ -1,10 +1,10 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Geo", sans-serif;
 }
 
 body{
@@ -28,6 +28,10 @@ header div{
     align-items: center;
     justify-content: space-around;
 }
+header div h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
 header div h3 span{
     color: blueviolet;    
 }
@@ -50,7 +54,7 @@ header div .redes a:hover{
 }
 
 header div .redes .git:hover{
-    color: blue;
+    color: rgb(67, 67, 67);
     transform: translateY(-3px);
 }
 
@@ -62,4 +66,14 @@ header div .redes .linke:hover{
 header div .redes .insta:hover{
     color: hotpink;
     transform: translateY(-3px);
+}
+
+/*  PRIMEIRA SECAO */
+
+#s1{
+    margin: auto;
+    text-align: center;
+}
+#s1 h1{
+    font-size: 7rem;
 }
