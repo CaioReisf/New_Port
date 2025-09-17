@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 5%;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header div h3 span{
+    color: blueviolet;    
+}
+
+header div .redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+header div .redes a{
+    transition: all .3s ease;
+}
+
+header div .redes a:hover{
+    color: blueviolet;
+    transform: translateY(-3px);
+}
+
+header div .redes .git:hover{
+    color: blue;
+    transform: translateY(-3px);
+}
+
+header div .redes .linke:hover{
+    color: cornflowerblue;
+    transform: translateY(-3px);
+}
+
+header div .redes .insta:hover{
+    color: hotpink;
+    transform: translateY(-3px);
+}
