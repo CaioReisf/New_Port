@@ -1,24 +1,3 @@
-const tempoCarregamento = 2000; 
-
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    const loadingScreen = document.getElementById("loading-screen");
-    const mainContent = document.getElementById("main-content");
-
-    
-    loadingScreen.classList.add("fade-out");
-
-   
-    setTimeout(() => {
-      loadingScreen.style.display = "none";
-      mainContent.style.display = "block";
-    }, 800); 
-  }, tempoCarregamento);
-});
-
-
-
-
 const itensMenu = document.querySelectorAll('.menu li');
 const secoes = document.querySelectorAll('.secao');
 
@@ -73,3 +52,17 @@ itensMenu.forEach(item => {
     }
 
     digita();
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+reveals.forEach(reveal => {
+  observer.observe(reveal);
+});

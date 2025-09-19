@@ -251,3 +251,14 @@ footer{
     text-align: center;
     color: rgba(255, 255, 255, 0.492);
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
