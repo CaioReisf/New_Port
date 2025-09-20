@@ -93,6 +93,18 @@ header div .redes .insta:hover{
     margin-top: 6%;
     color: blueviolet;
 }
+
+#s1 #text::after {
+  content: "|";
+  margin-left: 4px;
+  color: #8a2be2;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 /* SEGUNDA SECAO */
 
 #s2{
