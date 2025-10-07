@@ -191,7 +191,6 @@ header div .redes .insta:hover{
 #projetos a{
     text-decoration: none;
     color: blueviolet;
-    border-bottom: 1px blueviolet solid;
     border-radius: 100px;
     padding: 3px;
 }
