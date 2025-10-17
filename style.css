@@ -1,97 +1,104 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Geo", sans-serif;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Geo", sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    background-color: black;
-    color: white;
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: black;
+  color: white;
 }
 
-header{
-    margin-top: 5%;
-}
-header a{
-    text-decoration: none;
-    color: white;
-}
-header div{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-header div h3{
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-header div h3 span{
-    color: blueviolet;    
+header {
+  margin-top: 5%;
 }
 
-header div .redes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    list-style: none;
-    text-decoration: none;
-}
-header div .redes a{
-    transition: all .3s ease;
+header a {
+  text-decoration: none;
+  color: white;
 }
 
-header div .redes a:hover{
-    color: blueviolet;
-    transform: translateY(-3px);
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-header div .redes .git:hover{
-    color: rgb(67, 67, 67);
-    transform: translateY(-3px);
+header div h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
-header div .redes .linke:hover{
-    color: cornflowerblue;
-    transform: translateY(-3px);
+header div h3 span {
+  color: blueviolet;
 }
 
-header div .redes .insta:hover{
-    color: hotpink;
-    transform: translateY(-3px);
+header div .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  list-style: none;
+  text-decoration: none;
+}
+
+header div .redes a {
+  transition: all .3s ease;
+}
+
+header div .redes a:hover {
+  color: blueviolet;
+  transform: translateY(-3px);
+}
+
+header div .redes .git:hover {
+  color: rgb(67, 67, 67);
+  transform: translateY(-3px);
+}
+
+header div .redes .linke:hover {
+  color: cornflowerblue;
+  transform: translateY(-3px);
+}
+
+header div .redes .insta:hover {
+  color: hotpink;
+  transform: translateY(-3px);
 }
 
 /*  PRIMEIRA SECAO */
 
-#s1{
-    margin-top: 20%;
-    text-align: center;
-}
-#s1 h1{
-    font-size: 9rem;
-    margin: 0px;
-    padding: 0px;
-    line-height: 100px;
+#s1 {
+  margin-top: 20%;
+  text-align: center;
 }
 
-#s1 span{
-    font-size: 2rem;
-    color: #8a2be2;
-    margin: 0px;
-    padding: 0px;
+#s1 h1 {
+  font-size: 9rem;
+  margin: 0px;
+  padding: 0px;
+  line-height: 100px;
 }
 
-#s1 i{
-    font-size: 3rem;
-    margin-top: 6%;
-    color: blueviolet;
+#s1 span {
+  font-size: 2rem;
+  color: #8a2be2;
+  margin: 0px;
+  padding: 0px;
+}
+
+#s1 i {
+  font-size: 3rem;
+  margin-top: 6%;
+  color: blueviolet;
 }
 
 #s1 #text::after {
@@ -102,32 +109,35 @@ header div .redes .insta:hover{
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* SEGUNDA SECAO */
 
-#s2{
-    display: flex;
-    align-items: normal;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 25%;
-    margin-bottom: 20%;
+#s2 {
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 25%;
+  margin-bottom: 20%;
 }
 
-#s2 .sobremim h1{
-    color: blueviolet;
-    font-size: 3rem;
-    
-}
-#s2 .sobremim p{
-    font-size: 1.2rem;
-    
+#s2 .sobremim h1 {
+  color: blueviolet;
+  font-size: 3rem;
+
 }
 
-#s2 img{
-    border-radius: 25px;
+#s2 .sobremim p {
+  font-size: 1.2rem;
+
+}
+
+#s2 img {
+  border-radius: 25px;
 }
 
 /* SECAO DE TROCA */
@@ -137,9 +147,9 @@ header div .redes .insta:hover{
   border-radius: 8px;
   padding: 30px;
   gap: 15%;
-  max-width: 1000px;  
+  max-width: 1000px;
   width: 100%;
-  margin: 0 auto;    
+  margin: 0 auto;
 }
 
 .menu ul {
@@ -160,7 +170,7 @@ header div .redes .insta:hover{
 .menu li.active {
   color: #f1f1f1;
   background: #21262d;
-  border-left: 3px solid blueviolet; 
+  border-left: 3px solid blueviolet;
 }
 
 .conteudo {
@@ -188,11 +198,11 @@ header div .redes .insta:hover{
   color: blueviolet;
 }
 
-#projetos a{
-    text-decoration: none;
-    color: blueviolet;
-    border-radius: 100px;
-    padding: 3px;
+#projetos a {
+  text-decoration: none;
+  color: blueviolet;
+  border-radius: 100px;
+  padding: 3px;
 }
 
 
@@ -237,7 +247,8 @@ header div .redes .insta:hover{
 
 .form-contato input:focus,
 .form-contato textarea:focus {
-  border-color: #ff6ec7; /* destaque rosa/neon */
+  border-color: #ff6ec7;
+  /* destaque rosa/neon */
   outline: none;
 }
 
@@ -257,10 +268,10 @@ header div .redes .insta:hover{
 }
 
 /* FOOTER */
-footer{
-    margin-top: 5%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.492);
+footer {
+  margin-top: 5%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.492);
 }
 
 .reveal {
